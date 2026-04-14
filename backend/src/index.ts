@@ -4,6 +4,7 @@ import mongoose from "mongoose";
 import authRoutes from "./routes/authRoutes";
 import docRoutes from "./routes/docRoutes";
 import cors from "cors";
+import chatRoutes from "./routes/chat";
 
 const app = express();
 app.use(cors());
@@ -24,5 +25,5 @@ connectDB();
 
 app.use("/api/v1/user", authRoutes);
 app.use("/api/v1/doctor", docRoutes);
-
+app.use("/api/chat", chatRoutes);
 app.listen(3000);

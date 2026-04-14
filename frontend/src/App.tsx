@@ -9,6 +9,7 @@ import DoctorDashboard from "./routes/DocDashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
 import UserDashboard from "./routes/UserDashboard";
 import UserProtected from "./components/userProtectedRoute";
+import Chat from "./routes/Chat";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             </ProtectedRoute>
           }
         />
+        <Route path="/chat" element={<Chat />} />
         <Route path="/home" element={<Home />} />
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/signin" element={<SigninPage />} />
