@@ -1,0 +1,18 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = Footer;
+const jsx_runtime_1 = require("react/jsx-runtime");
+const fa_1 = require("react-icons/fa");
+function Footer() {
+    return ((0, jsx_runtime_1.jsxs)("footer", { id: "about", className: "w-full py-20 px-6 md:px-20 relative overflow-hidden text-center", style: {
+            backgroundImage: "url('/src/assets/footer-bg.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+        }, children: [(0, jsx_runtime_1.jsx)("div", { className: "absolute inset-0 bg-linear-to-r from-white/85 via-white/60 to-white/40" }), (0, jsx_runtime_1.jsx)("div", { className: "absolute top-10 left-10 w-40 h-40 bg-blue-300/20 rounded-full blur-3xl" }), (0, jsx_runtime_1.jsx)("div", { className: "absolute bottom-10 right-10 w-52 h-52 bg-purple-300/20 rounded-full blur-3xl" }), (0, jsx_runtime_1.jsxs)("div", { className: "relative", children: [(0, jsx_runtime_1.jsxs)("div", { className: "flex flex-col items-center mb-8", children: [(0, jsx_runtime_1.jsx)("div", { className: "w-12 h-12 bg-linear-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-md mb-3", children: "M" }), (0, jsx_runtime_1.jsx)("h2", { className: "text-2xl font-bold text-gray-900", children: "MindSupportAI" }), (0, jsx_runtime_1.jsx)("p", { className: "text-gray-500 text-sm mt-2", children: "AI-powered emotional support, built with care & safety." })] }), (0, jsx_runtime_1.jsx)("div", { className: "flex flex-wrap justify-center gap-6 md:gap-10 font-medium mb-10", children: [
+                            { name: "About", link: "#" },
+                            { name: "Key Features", link: "#features" },
+                            { name: "Ethics & Safety", link: "#safety" },
+                            { name: "Support", link: "#" },
+                        ].map((item) => ((0, jsx_runtime_1.jsxs)("a", { href: item.link, className: "relative group text-gray-600", children: [(0, jsx_runtime_1.jsx)("span", { className: "group-hover:text-blue-600 transition", children: item.name }), (0, jsx_runtime_1.jsx)("span", { className: "absolute left-0 -bottom-1 w-0 h-[1.5px] \r\n              bg-linear-to-r from-blue-500 to-purple-500 \r\n              transition-all duration-300 group-hover:w-full" })] }, item.name))) }), (0, jsx_runtime_1.jsx)("div", { className: "w-full max-w-md mx-auto h-px bg-gray-200 mb-8" }), (0, jsx_runtime_1.jsxs)("div", { className: "flex justify-center gap-6 mb-6", children: [(0, jsx_runtime_1.jsx)("a", { className: "p-3 rounded-full bg-white/80 border border-gray-200 shadow-sm \r\n          hover:shadow-md hover:-translate-y-1 transition", children: (0, jsx_runtime_1.jsx)(fa_1.FaTwitter, { size: 16 }) }), (0, jsx_runtime_1.jsx)("a", { className: "p-3 rounded-full bg-white/80 border border-gray-200 shadow-sm \r\n          hover:shadow-md hover:-translate-y-1 transition", children: (0, jsx_runtime_1.jsx)(fa_1.FaLinkedin, { size: 16 }) }), (0, jsx_runtime_1.jsx)("a", { className: "p-3 rounded-full bg-white/80 border border-gray-200 shadow-sm \r\n          hover:shadow-md hover:-translate-y-1 transition", children: (0, jsx_runtime_1.jsx)(fa_1.FaFacebook, { size: 16 }) }), (0, jsx_runtime_1.jsx)("a", { className: "p-3 rounded-full bg-white/80 border border-gray-200 shadow-sm \r\n          hover:shadow-md hover:-translate-y-1 transition", children: (0, jsx_runtime_1.jsx)(fa_1.FaEnvelope, { size: 16 }) })] }), (0, jsx_runtime_1.jsx)("p", { className: "text-gray-500 text-sm", children: "\u00A9 2026 MindSupportAI. All rights reserved." })] })] }));
+}
+//# sourceMappingURL=Footer.js.map
