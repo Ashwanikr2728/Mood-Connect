@@ -4,5 +4,6 @@ declare namespace NodeJS {
     USER_JWT_SECRET: string;
     MONGO_URL: string;
     GEMINI_API_KEY: string;
+    PORT:number
   }
 }

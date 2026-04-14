@@ -10,6 +10,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+const PORT = process.env.PORT || 3000;
+
 const MONGO_URL = process.env.MONGO_URL;
 const connectDB = async () => {
   try {
@@ -23,7 +25,14 @@ const connectDB = async () => {
 
 connectDB();
 
+app.get("/healthz", (req, res) => {
+  res.send("OK");
+});
+
 app.use("/api/v1/user", authRoutes);
 app.use("/api/v1/doctor", docRoutes);
 app.use("/api/chat", chatRoutes);
-app.listen(3000);
+
+app.listen(PORT, () => {
+  console.log(`Running on port ${PORT}`);
+});
